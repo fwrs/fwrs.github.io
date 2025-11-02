@@ -39,7 +39,7 @@ content {
     color: black;
     padding: 22px;
     border: 1px solid rgb(0, 0, 245);
-    border-radius: 10px;
+    border-radius: 22px;
     margin: 50px;
 }
 
@@ -144,5 +144,12 @@ links bullet {
     content {
         display: block;
         margin: 30px;
+    }
+}
+
+@supports (corner-shape: squircle) {
+    content {
+        border-radius: 40px !important;
+        corner-shape: squircle !important;
     }
 }
